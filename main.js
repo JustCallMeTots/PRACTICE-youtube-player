@@ -223,9 +223,9 @@ const eventListeners = () => {
       favorite: document.querySelector('#favorite').checked,
     }
     // push that object to the data array    
-    data.push(newVideoObj)
+    data.push(newVideoObj);
     // rerender cards using the cardsOnDom function and pass it the updated data array
-    
+    cardsOnDom(data);
     
     // Close modal and reset form
     formModal.hide()
